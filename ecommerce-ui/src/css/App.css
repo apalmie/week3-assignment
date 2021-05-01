@@ -1,0 +1,42 @@
+.add-rental .card-body {
+  display: none;
+}
+
+body {
+  font-weight: 200;
+}
+/*
+.rental-addheading {
+  cursor: pointer;
+  user-select: none;
+}
+
+.rental-list {
+  font-size: 1.1em;
+}
+
+.rental-list .rental-item {
+  border-bottom: 1px dotted gray;
+}
+
+.rental-list .rental-item :last-child {
+  border-bottom: none;
+}
+
+.rental-list .rental-title {
+  font-weight: 600;
+  color: #337ab7;
+  font-size: 1.3em;
+  line-height: 100%;
+}
+
+.rental-list .label-item {
+  font-weight: 600;
+  color: #667b82;
+}
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #a9aeb2;
+} */
