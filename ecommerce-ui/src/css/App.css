@@ -1,42 +1,38 @@
-.add-rental .card-body {
-  display: none;
-}
-
 body {
   font-weight: 200;
-}
-/*
-.rental-addheading {
-  cursor: pointer;
-  user-select: none;
+  padding: 20px;
 }
 
-.rental-list {
-  font-size: 1.1em;
+.card-columns {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
 
-.rental-list .rental-item {
-  border-bottom: 1px dotted gray;
+.card .list-group {
+  font-size: 15px;
 }
 
-.rental-list .rental-item :last-child {
-  border-bottom: none;
+div .cart-item {
+  margin: 1em;
 }
 
-.rental-list .rental-title {
-  font-weight: 600;
-  color: #337ab7;
-  font-size: 1.3em;
-  line-height: 100%;
+.cart-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.rental-list .label-item {
-  font-weight: 600;
-  color: #667b82;
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.33);
 }
 
+.btn:active {
+  background-color: #3e8e41;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
 
-.dropdown-item.active,
-.dropdown-item:active {
-  background-color: #a9aeb2;
-} */
+.final-cost {
+  font-weight: bold;
+}

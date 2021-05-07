@@ -7,6 +7,7 @@ class AddRentals extends Component {
     this.state = {
       rentalTitle: '',
       houseType: '',
+      image: '',
       city: '',
       country: '',
       hostName: '',
@@ -49,6 +50,7 @@ class AddRentals extends Component {
     this.setState({
       rentalTitle: '',
       houseType: '',
+      imagePath: '',
       city: '',
       country: '',
       hostName: '',

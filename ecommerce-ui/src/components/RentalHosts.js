@@ -17,7 +17,7 @@ class RentalHost extends Component {
         <span>Host Details</span>
         <span>
           <ul>
-            <li>Rental Cost: {name}</li>
+            <li>Host Name: {name}</li>
             {isSuperhost && (
               <li>Super Host: </li>
             )}

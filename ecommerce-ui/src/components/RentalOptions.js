@@ -14,7 +14,7 @@ class RentalOption extends Component {
     rental: PropTypes.shape({
       title: PropTypes.string.isRequired,
       houseType:PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      image: PropTypes.string,
       location: PropTypes.object.isRequired,
       payment: PropTypes.object.isRequired,
       host: PropTypes.object.isRequired,
@@ -29,7 +29,7 @@ class RentalOption extends Component {
     return(
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-            <ListGroup variant="flush">
+            <ListGroup horizontal>
               <ListGroup.Item>
                 <RentalLocation
                   location={this.props.rental.location}

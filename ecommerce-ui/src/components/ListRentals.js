@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
 
-import CardDeck from 'react-bootstrap/CardDeck';
+import CardColumns from 'react-bootstrap/CardColumns';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class ListRentals extends Component {
   render() {
     return(
-      <CardDeck>
+      <CardColumns>
         {this.props.rentals.map( rental => (
           <Card
             key={rental.props.rental.rentalId}
-            style={{ width: '18rem' }}
           >
-            <Card.Img src={rental.props.rental.image} />
-            {rental}
-            <Card.Footer>
-              <Button variant="primary" onClick={() => this.props.addToCart(rental)}>
-                Add Rental To Cart
-              </Button>
-            </Card.Footer>
+            <Row>
+              <Col>
+                <Card.Img src={rental.props.rental.image} />
+              </Col>
+              <Col>
+                {rental}
+              </Col>
+            </Row>
+              <Card.Footer>
+                <Button variant="primary" onClick={() => this.props.addToCart(rental)}>
+                  Add Rental To Cart
+                </Button>
+              </Card.Footer>
           </Card>
         ))}
-      </CardDeck>
+      </CardColumns>
     );
   }
 }
